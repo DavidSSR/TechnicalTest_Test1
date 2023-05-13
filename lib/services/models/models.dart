@@ -1,0 +1,1 @@
+export 'package:technical_test/services/models/menu_option.dart';

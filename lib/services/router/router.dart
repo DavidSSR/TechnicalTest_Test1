@@ -1,0 +1,1 @@
+export 'package:technical_test/services/router/app_routes.dart';
