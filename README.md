@@ -1,16 +1,15 @@
 # technical_test
 
-A new Flutter project.
+# Prueba 1.
 
-## Getting Started
+# Instalacion
 
-This project is a starting point for a Flutter application.
+Descargar proyecto y utilizar comando flutter get pub para instalar dependencias.
+El proyecto de manera Web y Mobile.
+Consta de 3 pantallas:
+El Home (Inicio): Donde se ven las pantallas disponibles y tiene un menu desplegable a la izquierda. 
+Crear usuario: Donde se digitan nombres y apellidos que debe contener entre 3 y 25 caracteres, y se debe elegir una fecha de nacimiento que esta dentro de un intervalo.
+Datos adicionales: Donde se crean y se guardan direcciones de manera dinamica y deben contener entre 5 y 25 caracteres.
+Boton icono en la esquina superior derecha: Este boton me muestra en cualquier momento el usuario que acabo de crear, si no he creado no me muestra ninguno; si ya hay uno creado y se crea uno nuevo, queda el nuevo.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+La aplicacion fue realizada utilizando el patron bloc de manera global para manejar los estados.

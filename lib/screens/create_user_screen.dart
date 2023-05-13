@@ -185,7 +185,7 @@ class _CreateUserScreenState extends State<CreateUserScreen> {
                                       context, "Selecciona una fecha");
                                 }
                                 else if(nombreController.text.length < 3 || apellidoController.text.length < 3){
-                                  mostrarAlerta(context,"Nombre y Apellido deben contenter minimo 3 caracteres");
+                                  mostrarAlerta(context,"Nombre y Apellido deben contenter mínimo 3 caracteres");
 
                                 } else {
                                   String dat = date.toIso8601String();
@@ -293,7 +293,7 @@ void getUser(BuildContext context, Map<String, dynamic> user) {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('No hay usuario creado actualmente: '),
+          title: Text('No hay usuario creado actualmente '),
           actions: [
             ElevatedButton(
               onPressed: () {

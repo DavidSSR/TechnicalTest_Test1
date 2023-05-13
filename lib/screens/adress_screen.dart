@@ -30,7 +30,7 @@ class _AddressScreenState extends State<AddressScreen> {
         return Scaffold(
           appBar: AppBar(
             backgroundColor: const Color(0xFF120D5F),
-            title: const Text('Informacion adicional'),
+            title: const Text('Información adicional'),
             actions: <Widget>[
               IconButton(
                   onPressed: () {
@@ -55,7 +55,7 @@ class _AddressScreenState extends State<AddressScreen> {
                 child: Column(
                   children: [
                     Text(
-                      "Escriba al menos una direccion",
+                      "Escriba al menos una dirección",
                       style: TextStyle(fontSize: 14),
                     ),
                     SizedBox(height: 15),
@@ -69,7 +69,7 @@ class _AddressScreenState extends State<AddressScreen> {
                           return Row(
                             children: [
                               Text(
-                                "Direccion #${index.toString()}",
+                                "#${index.toString()}",
                                 style: TextStyle(fontSize: 14),
                               ),
                               Flexible(
@@ -93,7 +93,7 @@ class _AddressScreenState extends State<AddressScreen> {
                                               borderSide: BorderSide(
                                                   width: 1.0,
                                                   color: Color(0xFF120D5F))),
-                                          hintText: 'Direccion',
+                                          hintText: 'Dirección',
                                           hintStyle: TextStyle(
                                               height: 0.5,
                                               color: const Color(0xFF4F80BD),
@@ -109,11 +109,11 @@ class _AddressScreenState extends State<AddressScreen> {
                                       _controller.remove(e);
                                       addresses.remove(e.text.toString());
                                     });
-                                    Alerta('Direccion eliminada exitosamente',
+                                    Alerta('Dirección eliminada exitosamente',
                                         context,false);
                                   } else {
                                     Alerta(
-                                        'No se puede eliminar, tienes que escribir al menos una direccion',
+                                        'No se puede eliminar, tienes que escribir al menos una dirección',
                                         context,false);
                                   }
                                 },
@@ -129,11 +129,11 @@ class _AddressScreenState extends State<AddressScreen> {
                                         _controller
                                             .add(TextEditingController());
                                       });
-                                      Alerta('Direccion agregada exitosamente',
+                                      Alerta('Dirección agregada exitosamente',
                                           context,false);
                                     } else {
                                       Alerta(
-                                          "Campo de direccion debe contener al menos 5 caracteres", context,false);
+                                          "Campo de dirección debe contener al menos 5 caracteres", context,false);
                                     }
                                   },
                                   icon: const Icon(Icons.add_circle_outline))
@@ -162,7 +162,7 @@ class _AddressScreenState extends State<AddressScreen> {
                                 globalBloc.add(CreateUserEvent(user));
                                 Alerta("Usuario creado exitosamente", context,true);
                               } else {
-                                Alerta("Se necesita al menos una direccion",context,false);
+                                Alerta("Se necesita al menos una dirección",context,false);
                               }
                             },
                             style: ButtonStyle(
@@ -256,7 +256,7 @@ void getUser(BuildContext context, Map<String, dynamic> user) {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('No hay usuario creado actualmente: '),
+          title: Text('No hay usuario creado actualmente '),
           actions: [
             ElevatedButton(
               onPressed: () {

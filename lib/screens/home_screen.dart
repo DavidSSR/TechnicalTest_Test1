@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
         return Scaffold(
           appBar: AppBar(
             backgroundColor: const Color(0xFF120D5F),
-            title: const Text('Inicio'),
+            title: const Text('Double V Partners - Inicio'),
             actions: <Widget>[
               IconButton(
                   onPressed: () {
@@ -93,7 +93,7 @@ void getUser(BuildContext context, Map<String, dynamic> user) {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('No hay usuario creado actualmente: '),
+          title: Text('No hay usuario creado actualmente '),
           actions: [
             ElevatedButton(
               onPressed: () {
