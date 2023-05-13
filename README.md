@@ -6,7 +6,7 @@ Prueba 1.
 Descargar proyecto y utilizar comando flutter get pub para instalar dependencias.
 El proyecto funciona de manera Web y Mobile.
 
-#Funcionamiento
+# Funcionamiento
 Consta de 3 pantallas:
 El Home (Inicio): Donde se ven las pantallas disponibles y tiene un menu desplegable a la izquierda. 
 Crear usuario: Donde se digitan nombres y apellidos que debe contener entre 3 y 25 caracteres, y se debe elegir una fecha de nacimiento que esta dentro de un intervalo.
